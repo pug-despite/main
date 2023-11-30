@@ -1,0 +1,13 @@
+const fs = require('fs');
+
+// Read file
+fs.readFile('file.txt', 'utf8', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+});
+
+// Write file
+fs.writeFile('newfile.txt', 'Hello, File!', (err) => {
+    if (err) throw err;
+    console.log('File written!');
+});
